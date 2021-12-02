@@ -25,6 +25,20 @@ const Sidebar = () => {
                     </li>
 
                     <li>
+                        <a href="#producerSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"><i
+                            className="fa fa-producer-hunt"></i> Producers</a>
+                        <ul className="collapse list-unstyled" id="producerSubmenu">
+                            <li>
+                                <Link to="/admin/producers"><i className="fa fa-clipboard"></i> All</Link>
+                            </li>
+
+                            <li>
+                                <Link to="/admin/producer"><i className="fa fa-plus"></i> Create</Link>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
                         <Link to="/admin/orders"><i className="fa fa-shopping-basket"></i> Orders</Link>
                     </li>
 
